@@ -1,3 +1,7 @@
+Conceptos
+🔵 Fundamentos
+
+
 Qué es programar?
 proceso de crear software o programas mediante la escritura de instrucciones (código) que una computadora puede entender y ejecutar.
 
@@ -73,3 +77,121 @@ Errores en Tiempo de Ejecución (RuntimeError)
 NameError: Usar una variable no definida.
 TypeError: Operaciones entre tipos incompatibles.
 IndexError: Acceder a una posición inexistente en una lista.
+
+
+
+🔵 Lógica de programación
+
+Comparar datos: (==, !=, <, >, <=, >=).
+    Los operadores de comparación se usan para evaluar condiciones y devuelven True o      False. Son esenciales en estructuras como if o while.
+
+    ==: Igualdad (¿son iguales?).
+
+    !=: Desigualdad (¿son diferentes?).
+
+    <, >: Menor que / Mayor que.
+
+    <=, >=: Menor o igual / Mayor o igual.
+    
+    
+Tomar decisiones: if, else, elif.
+    Estructuras condicionales para ejecutar código bajo ciertas condiciones.
+
+    if: Evalúa una condición. Si es True, ejecuta su bloque.
+
+    elif: Si el if anterior fue False, prueba otra condición.
+
+    else: Se ejecuta si ninguna condición anterior fue True.
+    
+    
+Combinar condiciones: and, or, not.
+    Permiten unir múltiples condiciones en una sola expresión.
+
+    and: Todas las condiciones deben ser True.
+
+    or: Al menos una condición debe ser True.
+
+    not: Invierte el resultado (True → False, False → True).
+    
+Cómo escribir comentarios en el código (# comentario).
+Son notas para explicar el código. No afectan la ejecución.
+
+Qué es la indentación y por qué es tan importante en Python.
+La indentación (sangría) define bloques de código. Es obligatoria en estructuras como if, for, funciones, etc.
+Correcto:
+if True:
+    print("Esto está indentado")  # Bloque del if
+    
+
+    Ejem
+edad = 30
+nombre_completo = "Ana Pérez"
+    
+Buenas prácticas al nombrar variables (nombres claros, sin espacios).
+    Descriptivas: precio_total en lugar de pt.
+
+    Minúsculas y guiones bajos: mi_variable, no MiVariable.
+
+    Evitar espacios o símbolos: nombre_usuario, no nombre usuario.
+    
+    
+
+¿Qué hacer cuando algo no funciona? (buscar, leer errores, no frustrarse).
+    Lee el error: Python indica el tipo y línea del error.
+
+    Verifica la sintaxis: ¿Faltan :, (), o indentación?
+
+    Usa print(): Depura valores intermedios.
+
+    Busca en internet: Copia el mensaje de error en Google.
+
+    Divide el problema: Resuelve por partes pequeñas.
+    
+    
+    
+
+🔵 Estructuras de control
+
+    Repetir acciones con bucles: for y while.
+    
+    Los bucles permiten ejecutar un bloque de código múltiples veces:
+
+Bucle for:
+
+    Ideal cuando sabes cuántas veces necesitas repetir
+
+    Recorre secuencias (listas, cadenas, rangos)
+    
+ Bucle while:
+
+    Útil cuando la repetición depende de una condición
+
+    Cuidado con bucles infinitos (asegúrate que la condición cambie)
+    
+    
+    Salir de un bucle antes de tiempo: break y continue.
+    break:
+
+    Termina completamente la ejecución del bucle
+
+    Útil cuando encuentras lo que buscabas
+     
+    continue:
+
+    Salta a la siguiente iteración del bucle
+
+    Ignora el resto del código en la iteración actual
+    
+    
+    
+Manejo básico de errores: try-except.
+try-except
+
+El bloque try-except en Python te permite controlar errores que podrían detener tu programa. Es como un "seguro" para tu código.
+try:
+    # Código que podría fallar
+    resultado = 10 / int(input("Divisor: "))
+    print("Resultado:", resultado)
+except:
+    # Qué hacer si hay un error
+    print("¡Algo salió mal!")
